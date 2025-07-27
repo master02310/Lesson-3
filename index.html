@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrations</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<main>
+    <section>
+        <div class="container">
+            <img src="images/exite.svg" alt="X" class="login__exite__img">
+            <div class="login__register">
+                <h3 class="login">Login</h3>
+                <img src="images/I.svg" alt="I" class="login__register__img">
+                <h3 class="register">Register</h3>
+            </div>
+            <div class="registration">
+                <p class="registration__form__description">Enter your email and password to register.</p>
+                <form class="registration__form" id="registrationForm">
+                    <label>
+                        <input type="text" name="username" placeholder="Username" class="registration__form__input"
+                               required
+                               minlength="1" maxlength="10"
+                               title="От 1 до 10 символов">
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Email" class="registration__form__input" required
+                               title="Введите корректный email">
+                    </label>
+                    <label class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Password"
+                               class="registration__form__input"
+                               required
+                               minlength="7"
+                               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!.*[!@#$%^&*]).{7,}$"
+                               title="Минимум 7 символов, хотя бы 1 заглавная, 1 строчная, 1 цифра и 1 символ (!@#$%^&*)">
+                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                    </label>
+                    <label>
+                        <input type="password" id="confirmPassword" name="confirm_password"
+                               placeholder="Confirm Password"
+                               class="registration__form__input" required
+                               minlength="7"
+                               title="Пароли должны совпадать">
+                    </label>
+                    <button type="submit" class="registration__form__button">Register</button>
+                </form>
+            </div>
+            <div class="registration__type">
+                <div class="registration__type__line">
+                    <img src="images/Line_7.svg" alt="Line_7" class="registration__type__img">
+                    <p class="registration__type__description">Or register with</p>
+                    <img src="images/Line_8.svg" alt="Line_8" class="registration__type__img">
+                </div>
+                <div class="registration__type__options">
+                    <button class="registration__type__button">
+                        <img src="images/google.svg" alt="google" class="registration__type__img">
+                        Continue with Google
+                    </button>
+                    <button class="registration__type__button">
+                        <img src="images/facebook.svg" alt="facebook" class="registration__type__img">
+                        Continue with Facebook
+                    </button>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+        </div>
+    </section>
+</main>
+<script>
+    const passwordField = document.getElementById('password');
+    const confirmPasswordField = document.getElementById('confirmPassword');
+    const toggleIcon = document.getElementById('togglePassword');
+
+    toggleIcon.addEventListener('click', () => {
+        const isPassword = passwordField.type === 'password';
+        passwordField.type = isPassword ? 'text' : 'password';
+        confirmPasswordField.type = isPassword ? 'text' : 'password';
+        toggleIcon.classList.toggle('fa-eye');
+        toggleIcon.classList.toggle('fa-eye-slash');
+    });
+
+    const form = document.getElementById('registrationForm');
+
+    form.addEventListener('submit', function (e) {
+        if (passwordField.value !== confirmPasswordField.value) {
+            e.preventDefault();
+            confirmPasswordField.setCustomValidity('Пароли не совпадают');
+            confirmPasswordField.reportValidity();
+        } else {
+            confirmPasswordField.setCustomValidity('');
+        }
+    });
+</script>
+</body>
+</html>
