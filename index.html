@@ -7,39 +7,44 @@
 </head>
 <body>
 <header>
-    <div>
+    <div class="container navigation">
         <div class="logo">
             <img src="images/Logo.svg" alt="Logo">
         </div>
         <div class="menu">
-            <a href="#">Home</a>
+            <a href="#" class="menu-item active">Home</a>
             <a href="#">Shop</a>
             <a href="#">Plant Care</a>
             <a href="#">Blogs</a>
         </div>
         <div class="login">
-            <img src="images/Logout.svg" alt="Logout">
-            <a href="#">Login</a>
+            <a href="registration.html" class="login-btn">
+                <img src="images/Logout.svg" alt="Logout" class="btn-icon">
+                Login
+            </a>
         </div>
     </div>
 </header>
 <main>
     <section>
-        <div>
-            <div>
+        <div class="container main-content">
+            <div class="main-description">
                 <a class="welcome">Welcome to GreenShop</a>
-                <h1 class="title">Let’s Make a Better </h1>
-                <h1 class="title-green">Planet</h1>
+                <h1 class="title">Let’s Make a Better
+                    <a class="title-green">Planet</a>
+                </h1>
                 <a class="description">We are an online plant shop offering a wide range of cheap and trendy plants. Use
                     our plants to
                     create an unique Urban Jungle. Order your favorite plants!</a>
-                <button>
-                    SHOP NOW
-                </button>
+                <div>
+                    <button class="order-btn">
+                        SHOP NOW
+                    </button>
+                </div>
             </div>
-            <div>
-                <img src="images/plant.png" alt="Plant">
-                <img src="images/small_plant.png" alt="Small Plant">
+            <div class="image">
+                <img src="images/plant.png" class="plant" alt="Plant">
+                <img src="images/small_plant.png" class="small-plant" alt="Small Plant">
             </div>
         </div>
     </section>
