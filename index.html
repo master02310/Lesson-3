@@ -12,7 +12,7 @@
             <img src="images/Logo.svg" alt="Logo">
         </div>
         <div class="menu">
-            <a href="#" class="menu-item active">Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#">Shop</a>
             <a href="#">Plant Care</a>
             <a href="#">Blogs</a>
@@ -26,7 +26,7 @@
     </div>
 </header>
 <main>
-    <section>
+    <section class="container">
         <div class="container main-content">
             <div class="main-description">
                 <a class="welcome">Welcome to GreenShop</a>
@@ -45,6 +45,215 @@
             <div class="image">
                 <img src="images/plant.png" class="plant" alt="Plant">
                 <img src="images/small_plant.png" class="small-plant" alt="Small Plant">
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <div class="main__products">
+                <div class="categories">
+                    <div class="categories__list__container">
+                        <a class="categories__title">Categories</a>
+                        <ul class="categories__list">
+                            <li><a href="#" class="categories-active">House Plants</a></li>
+                            <li><a href="#">Potter Plants</a></li>
+                            <li><a href="#">Seeds</a></li>
+                            <li><a href="#">Small Plants</a></li>
+                            <li><a href="#">Big Plants</a></li>
+                            <li><a href="#">Succulents</a></li>
+                            <li><a href="#">Terrariums</a></li>
+                            <li><a href="#">Gardening</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <img src="images/Super_Sale_Banner.png" alt="Super Sale" class="sale-banner">
+                </div>
+                <div>
+                    <div class="products__navigation">
+                        <ul class="navigation__list">
+                            <li><a href="#" class="navigation-active">All Plants</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Sale</a></li>
+                        </ul>
+                        <div class="navigation__sort">
+                            <label for="sort">Short by:</label>
+                            <select id="sort" name="cars">
+                                <option value="default">Default sorting</option>
+                                <!--                                <option value="fhtl">Price: from high to low</option>-->
+                                <!--                                <option value="flth">Price: from low to high</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="product__card">
+                            <img src="images/Barberton_Daisy.png" alt="Barberton Daisy" class="product__img">
+                            <a class="product__name">Barberton Daisy</a>
+                            <a class="product__price">$119.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Angel_Wing_Begonia.png" alt="Angel Wing Begonia" class="product__img">
+                            <a class="product__name">Angel Wing Begonia</a>
+                            <a class="product__price">$169.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/African_Violet.png" alt="African Violet" class="product__img">
+                            <a class="product__name">African Violet</a>
+                            <a class="product__price">$199.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Beach_Spider_Lily.png" alt="Beach Spider Lily" class="product__img">
+                            <a class="product__name">Beach Spider Lily</a>
+                            <a class="product__price">$129.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Blushing_Bromeliad.png" alt="Blushing Bromeliad" class="product__img">
+                            <a class="product__name">Blushing Bromeliad</a>
+                            <a class="product__price">$139.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Aluminum_Plant.png" alt="Aluminum Plant" class="product__img">
+                            <a class="product__name">Aluminum Plant</a>
+                            <a class="product__price">$179.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Bird's_Nest_Fern.png" alt="Bird's Nest Fern" class="product__img">
+                            <a class="product__name">Bird's Nest Fern</a>
+                            <a class="product__price">$99.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Broadleaf_Lady_Palm.png" alt="Broadleaf Lady Palm" class="product__img">
+                            <a class="product__name">Broadleaf Lady Palm</a>
+                            <a class="product__price">$59.00</a>
+                        </div>
+                        <div class="product__card">
+                            <img src="images/Chinese_Evergreen.png" alt="Chinese Evergreen" class="product__img">
+                            <a class="product__name">Chinese Evergreen</a>
+                            <a class="product__price">$39.00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__pages">
+                <ul class="page__list">
+                    <li class="pages_active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#"><img src="images/Arrow_Right.png" alt="Arrow_Right"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container products__description">
+        <img src="images/infi_image_1.png" alt="Summer cactus & succulents" class="products__info__images">
+        <div class="products__description__container">
+            <div class="products__information">
+                <a class="products__information__title">Summer cactus & succulents</a>
+                <a class="products__information__description">We are an online plant shop offering a wide range of cheap
+                    and trendy plants</a>
+                <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow"></button>
+            </div>
+        </div>
+        <img src="images/info_image_2.png" alt="Styling Trends & much moreSuper Sale" class="products__info__images">
+        <div class="products__description__container">
+            <div class="products__information">
+                <a class="products__information__title">Styling Trends & much more</a>
+                <a class="products__information__description">We are an online plant shop offering a wide range of cheap
+                    and trendy plants</a>
+                <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow"></button>
+            </div>
+        </div>
+    </section>
+    <section class="container section__blog">
+        <div class="section__blog__container">
+            <h3 class="blog__title">Our Blog Posts</h3>
+            <a class="blog__description">We are an online plant shop offering a wide range of cheap and trendy
+                plants. </a>
+        </div>
+        <div class="section__blog__info">
+            <div class="blog__card">
+                <img class="blog__info__img" src="images/blog_image-1.png" alt="">
+                <div class="blog__card__text">
+                    <a class="blog__card__date">
+                        September 12
+                        <a class="blog__card__date2">I Read in 6 minutes</a>
+                    </a>
+                    <h6 class="blog__card__title">Cactus & Succulent Care Tips</h6>
+                    <a class="blog__card__description">Cacti are succulents are easy care plants for any home or
+                        patio.</a>
+                    <a class="read__more__btn" href="#">
+                        Read More
+                        <svg class="read__more__btn__svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66667 7.81714C2.66667 7.56401 2.85477 7.35481 3.09882 7.3217L3.16667 7.31714L13.1667 7.31714C13.4428 7.31714 13.6667 7.541 13.6667 7.81714C13.6667 8.07027 13.4786 8.27947 13.2345 8.31257L13.1667 8.31714H3.16667C2.89053 8.31714 2.66667 8.09328 2.66667 7.81714Z"
+                                  fill="currentColor"/>
+                            <path d="M8.78068 4.15517C8.585 3.96033 8.58431 3.64375 8.77915 3.44807C8.95628 3.27018 9.23402 3.25344 9.43008 3.39825L9.48626 3.44655L13.5196 7.46255C13.698 7.6402 13.7142 7.91895 13.5683 8.11499L13.5196 8.17114L9.48629 12.1878C9.29062 12.3827 8.97404 12.382 8.77918 12.1863C8.60204 12.0085 8.58648 11.7307 8.73212 11.5352L8.78065 11.4792L12.458 7.81666L8.78068 4.15517Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="blog__card">
+                <img class="blog__info__img" src="images/blog_image_2.png" alt="">
+                <div class="blog__card__text">
+                    <a class="blog__card__date">
+                        September 13
+                        <a class="blog__card__date2">I Read in 2 minutes</a>
+                    </a>
+                    <h6 class="blog__card__title">Top 10 Succulents for Your Home</h6>
+                    <a class="blog__card__description">Best in hanging baskets. Prefers medium to high light.</a>
+                    <a class="read__more__btn" href="#">
+                        Read More
+                        <svg class="read__more__btn__svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66667 7.81714C2.66667 7.56401 2.85477 7.35481 3.09882 7.3217L3.16667 7.31714L13.1667 7.31714C13.4428 7.31714 13.6667 7.541 13.6667 7.81714C13.6667 8.07027 13.4786 8.27947 13.2345 8.31257L13.1667 8.31714H3.16667C2.89053 8.31714 2.66667 8.09328 2.66667 7.81714Z"
+                                  fill="currentColor"/>
+                            <path d="M8.78068 4.15517C8.585 3.96033 8.58431 3.64375 8.77915 3.44807C8.95628 3.27018 9.23402 3.25344 9.43008 3.39825L9.48626 3.44655L13.5196 7.46255C13.698 7.6402 13.7142 7.91895 13.5683 8.11499L13.5196 8.17114L9.48629 12.1878C9.29062 12.3827 8.97404 12.382 8.77918 12.1863C8.60204 12.0085 8.58648 11.7307 8.73212 11.5352L8.78065 11.4792L12.458 7.81666L8.78068 4.15517Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="blog__card">
+                <img class="blog__info__img" src="images/blog_image_3.png" alt="">
+                <div class="blog__card__text">
+                    <a class="blog__card__date">September 15
+                        <a class="blog__card__date2">I Read in 3 minutes</a>
+                    </a>
+                    <h6 class="blog__card__title">Cacti & Succulent Care Tips</h6>
+                    <a class="blog__card__description">Cacti and succulents thrive in containers and because most
+                        are..</a>
+                    <a class="read__more__btn" href="#">
+                        Read More
+                        <svg class="read__more__btn__svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66667 7.81714C2.66667 7.56401 2.85477 7.35481 3.09882 7.3217L3.16667 7.31714L13.1667 7.31714C13.4428 7.31714 13.6667 7.541 13.6667 7.81714C13.6667 8.07027 13.4786 8.27947 13.2345 8.31257L13.1667 8.31714H3.16667C2.89053 8.31714 2.66667 8.09328 2.66667 7.81714Z"
+                                  fill="currentColor"/>
+                            <path d="M8.78068 4.15517C8.585 3.96033 8.58431 3.64375 8.77915 3.44807C8.95628 3.27018 9.23402 3.25344 9.43008 3.39825L9.48626 3.44655L13.5196 7.46255C13.698 7.6402 13.7142 7.91895 13.5683 8.11499L13.5196 8.17114L9.48629 12.1878C9.29062 12.3827 8.97404 12.382 8.77918 12.1863C8.60204 12.0085 8.58648 11.7307 8.73212 11.5352L8.78065 11.4792L12.458 7.81666L8.78068 4.15517Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="blog__card">
+                <img class="blog__info__img" src="images/blog_image_4.png" alt="blog_image_4">
+                <div class="blog__card__text">
+                    <a class="blog__card__date">September 15
+                        <a class="blog__card__date2">I Read in 2 minutes</a>
+                    </a>
+                    <h6 class="blog__card__title">Best Houseplants Room by Room</h6>
+                    <a class="blog__card__description">The benefits of houseplants are endless. In addition to..</a>
+                    <a class="read__more__btn" href="#">
+                        Read More
+                        <svg class="read__more__btn__svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66667 7.81714C2.66667 7.56401 2.85477 7.35481 3.09882 7.3217L3.16667 7.31714L13.1667 7.31714C13.4428 7.31714 13.6667 7.541 13.6667 7.81714C13.6667 8.07027 13.4786 8.27947 13.2345 8.31257L13.1667 8.31714H3.16667C2.89053 8.31714 2.66667 8.09328 2.66667 7.81714Z"
+                                  fill="currentColor"/>
+                            <path d="M8.78068 4.15517C8.585 3.96033 8.58431 3.64375 8.77915 3.44807C8.95628 3.27018 9.23402 3.25344 9.43008 3.39825L9.48626 3.44655L13.5196 7.46255C13.698 7.6402 13.7142 7.91895 13.5683 8.11499L13.5196 8.17114L9.48629 12.1878C9.29062 12.3827 8.97404 12.382 8.77918 12.1863C8.60204 12.0085 8.58648 11.7307 8.73212 11.5352L8.78065 11.4792L12.458 7.81666L8.78068 4.15517Z"
+                                  fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
