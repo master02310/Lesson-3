@@ -285,10 +285,30 @@ a {
 }
 
 .product__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 258px;
     height: 350px;
+}
+
+.hidden__buttons {
+    display: none;
+    width: 125px;
+    height: 35px;
+    align-items: center;
+    position: absolute;
+    bottom: 55px;
+    left: 71px;
+    gap: 26px
+}
+
+.product__card:hover {
+    border-top: 1px solid #46A358;
+}
+
+.product__card:hover .hidden__buttons {
+    display: flex;
 }
 
 .categories__title {
@@ -395,6 +415,36 @@ a {
     line-height: 16px;
     color: #46A358;
 }
+
+.product__price__discount {
+    position: absolute;
+    bottom: -2px;
+    left: 78px;
+    text-decoration: line-through;
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #A5A5A5;
+}
+
+.product__percent__discount {
+    position: absolute;
+    top: 16px;
+    left: -1px;
+    display: flex;
+    justify-content: center;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: none;
+    width: 80px;
+    height: 29px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    align-items: center;
+}
+
 
 .product__pages {
     margin: 92px auto 95px auto;
