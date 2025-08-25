@@ -11,12 +11,23 @@
         <div class="logo">
             <img src="images/Logo.svg" alt="Logo">
         </div>
-        <div class="menu">
-            <a href="#" class="active">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Plant Care</a>
-            <a href="#">Blogs</a>
-        </div>
+        <ul class="menu">
+            <li class="menu__hover"><a class="menu__item" href="#">Home</a></li>
+            <li class="menu__hover"><a class="menu__item" href="#">Shop</a></li>
+            <li class="menu__hover"><a class="menu__item" href="#">Plant Care</a>
+                <ul class="hidden__menu">
+                    <li><a href="#">Drainage</a></li>
+                    <li><a href="#">Fungicides</a></li>
+                    <li><a href="#">Fertilizer</a></li>
+                    <li>
+                        <a href="#">Priming</a>
+                        <img class="hidden__menu__arrow" src="images/arrow_right_menu.svg" alt="Arrow">
+
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__hover"><a class="menu__item" href="#">Blogs</a></li>
+        </ul>
         <div class="login">
             <a href="registration.html" class="login-btn">
                 <img src="images/Logout.svg" alt="Logout" class="btn-icon">

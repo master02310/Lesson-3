@@ -45,6 +45,10 @@ body {
     background: #FFFFFF;
 }
 
+header {
+    margin-top: 26px;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -55,6 +59,8 @@ a {
 }
 
 .navigation {
+    display: flex;
+    justify-content: space-between;
     height: 53px;
     border-bottom: 0.3px solid #46A35880;
 }
@@ -65,40 +71,91 @@ a {
 }
 
 .menu {
-    display: inline-block;
-    margin: 8px 370px 0 0;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 6px 370px 0 0;
 }
 
-.menu a {
+.menu__item:nth-last-child(2) {
+    width: 80px;
+    margin-right: -2px;
+}
+
+.menu__item {
     display: inline-block;
-    font-family: sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 100%;
     color: #3D3D3D;
     text-decoration: none;
     margin-right: 43px;
     margin-left: 0;
 }
 
-.menu a:last-child {
+.menu__item:last-child {
     margin-right: 0;
 }
 
-.menu a.active {
-    font-weight: bold;
+.menu__hover:hover {
+    border-bottom: 2px solid #46A358;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*.menu li:hover {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -13px;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 3px;*/
+/*    background-color: #46A358;*/
+/*}*/
+
+.menu:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden__menu li {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    width: 188px;
+    height: 35px;
+}
+
+.hidden__menu a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3D3D3D;
+}
+
+.menu > li {
     position: relative;
 }
 
-.menu a.active::after {
-    content: "";
+.menu > li > .hidden__menu {
     position: absolute;
-    bottom: -13px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #46A358;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: #EDF6EE;
+    width: 188px;
+    height: 143px;
+    list-style: none;
 }
 
+.menu > li:hover > .hidden__menu {
+    display: block;
+}
+
+.hidden__menu__arrow {
+    margin-left: 89px;
+}
 
 .login {
     display: inline-block;
