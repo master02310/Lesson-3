@@ -103,23 +103,16 @@ a {
     font-size: 16px;
 }
 
-/*.menu li:hover {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: -13px;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 3px;*/
-/*    background-color: #46A358;*/
-/*}*/
-
 .menu:hover ul {
     display: flex;
     flex-direction: column;
 }
 
-.hidden__menu li {
+.hidden__menu li a {
     margin-left: 14px;
+}
+
+.hidden__menu li {
     display: flex;
     align-items: center;
     width: 188px;
@@ -141,7 +134,7 @@ a {
 .menu > li > .hidden__menu {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -55px;
     display: none;
     background-color: #EDF6EE;
     width: 188px;
@@ -150,11 +143,68 @@ a {
 }
 
 .menu > li:hover > .hidden__menu {
+    z-index: 1;
     display: block;
+}
+
+.hidden__menu li:hover {
+    background-color: #1A712A;
+}
+
+.hidden__menu li:hover .hidden__menu__hover {
+    color: #FFFFFF;
+    font-weight: 700;
 }
 
 .hidden__menu__arrow {
     margin-left: 89px;
+}
+
+.hidden__menu li .hidden__menu__arrow__hover {
+    display: none;
+    margin-left: 87px;
+}
+
+.hidden__menu li:hover .hidden__menu__arrow {
+    display: none;
+}
+
+.hidden__menu li:hover .hidden__menu__arrow__hover {
+    display: inline-block;
+}
+
+.menu > li > .hidden__menu > li {
+    position: relative;
+}
+
+.menu > li > .hidden__menu > li > ul {
+    position: absolute;
+    top: -93px;
+    right: -176px;
+    display: none;
+    background-color: #EDF6EE;
+    width: 188px;
+    height: 215px;
+    list-style: none;
+}
+
+.menu > li:hover > .hidden__menu > li:hover > ul {
+    z-index: 1;
+    display: block;
+}
+
+.hidden__menu li ul li:hover a {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.hidden__menu li:hover {
+    background-color: #1A712A;
+}
+
+.hidden__menu a:hover {
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .login {
