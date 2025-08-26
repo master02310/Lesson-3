@@ -180,7 +180,7 @@ a {
 .menu > li > .hidden__menu > li > ul {
     position: absolute;
     top: -93px;
-    right: -176px;
+    right: -188px;
     display: none;
     background-color: #EDF6EE;
     width: 188px;
@@ -762,4 +762,218 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.footer {
+    margin-top: 100px;
+    height: 610px;
+}
+
+.footer__container {
+    padding-top: 24px;
+    background-color: #FBFBFB;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto 24px 24px 24px;
+}
+
+.footer__info__card {
+    width: 204px;
+    height: 202px;
+}
+
+.footer__info__email {
+    margin-left: 32px;
+    width: 354px;
+    height: 202px;
+}
+
+.footer__info__title {
+    margin: 10px auto 9px auto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.footer__info__email_title {
+    margin: 13px auto 9px auto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.footer__email__description {
+    display: block;
+    width: 354px;
+    height: 89px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #727272;
+}
+
+.footer__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #727272;
+}
+
+
+.footer__email-form {
+    display: flex;
+    width: 354px;
+    height: 40px;
+    margin: 25px auto 18px auto;
+}
+
+.footer__email-form__input {
+    display: flex;
+    width: 255px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    border-radius: 6px 0 0 6px;
+    background: #FFFFFF;
+    color: #ACACAC;
+}
+
+.footer__email-form__btn {
+    width: 85px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #46A358;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: background 0.3s ease;
+}
+
+.footer__email-form__btn:hover {
+    background: #4cae4c;
+}
+
+.footer__gradient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 23px;
+    padding-right: 22px;
+    height: 88px;
+    background: linear-gradient(to right, #EDF6EF, #52C368);
+}
+
+.footer__logo {
+    width: 150px;
+    height: 34px;
+}
+
+.footer__gradient__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer__location {
+    width: 205px;
+}
+
+.footer__gradient__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #3D3D3D;
+}
+
+.footer__navigation {
+    display: flex;
+    height: 236px;
+    padding-left: 25px;
+    /*justify-content: space-between;*/
+    align-items: center;
+    border-bottom: 0.3px solid #46A35833;
+}
+
+.footer__navigation__account {
+    width: 100px;
+    height: 174px;
+}
+
+.footer__navigation__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #3D3D3D;
+}
+
+.footer__navigation__list {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 4px;
+}
+
+.footer__navigation__help {
+    width: 137px;
+    height: 174px;
+    margin-left: 164px;
+}
+
+.footer__navigation__categories {
+    width: 93px;
+    height: 174px;
+    margin-left: 129px;
+}
+
+.footer__navigation__social {
+    width: 224px;
+    height: 174px;
+    margin-left: 173px;
+}
+
+.footer__social__list {
+    width: 190px;
+    margin: 20px 0 26px 0;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer__social__list img {
+    width: 30px;
+    height: 30px;
+}
+
+.payment_methode {
+    margin-top: 10px;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #3D3D3D;
 }
