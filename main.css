@@ -103,6 +103,10 @@ a {
     font-size: 16px;
 }
 
+.menu__hover:hover > a {
+    text-shadow: #3D3D3D 1px 0 0;
+}
+
 .menu:hover ul {
     display: flex;
     flex-direction: column;
@@ -225,6 +229,10 @@ a {
     text-align: center;
     transition: background-color 0.3s ease;
     white-space: nowrap;
+}
+
+.login-btn:hover {
+    background: #4cae4c;
 }
 
 .btn-icon {
@@ -368,6 +376,12 @@ a {
     gap: 39px;
 }
 
+.navigation__list li:hover {
+    border-bottom: 2px solid #46A358;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .navigation__list a {
     font-weight: 400;
     font-size: 15px;
@@ -376,7 +390,8 @@ a {
     color: #3D3D3D;
 }
 
-.navigation__list .category-active {
+.navigation__list a:hover {
+    text-shadow: #46A358 1px 0;
     color: #46A358;
 }
 
@@ -392,6 +407,8 @@ a {
 }
 
 .product__card {
+    border-top: 1px solid transparent;
+    transition: border-color 0.3s ease;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -459,6 +476,11 @@ a {
     line-height: 40px;
 }
 
+.categories__list a:hover {
+    color: #46A358;
+    text-shadow: #46A358 1px 0;
+}
+
 .categories__list .categories-active {
     color: #46A358;
     font-weight: 700;
@@ -500,7 +522,7 @@ a {
 }
 
 .product__img {
-    margin-top: 34px;
+    margin-top: 28px;
     margin-right: 4px;
     background-color: #F5F5F580;
     height: 250px;
@@ -562,6 +584,7 @@ a {
 .page__list {
     display: flex;
     gap: 9px;
+    transition: background 0.3s ease;
 }
 
 .page__list li {
@@ -585,15 +608,16 @@ a {
     justify-content: center;
 }
 
-.page__list .pages_active a {
+.page__list li:hover {
+    background-color: #46A358;
+    transition: background-color 0.3s ease;
+}
+
+.page__list li:hover a {
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
     color: #FFFFFF;
-}
-
-.page__list .pages_active {
-    background-color: #46A358;
 }
 
 .products__description {
@@ -655,10 +679,12 @@ a {
     align-items: center;
 }
 
+.find-more__btn:hover {
+    background: #4cae4c;
+    transition: background 0.3s ease;
+}
+
 .products__info__images {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
     width: 287px;
     height: 292px;
     margin-bottom: 10px;
