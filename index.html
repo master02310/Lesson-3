@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
 <header>
     <div class="container navigation">
         <div class="logo">
@@ -426,5 +429,14 @@
         <a class="copyright">© 2021 GreenShop. All Rights Reserved.</a>
     </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const preloader = document.getElementById("preloader");
+
+        setTimeout(() => {
+            preloader.classList.add("hidden");
+        }, 500);
+    });
+</script>
 </body>
 </html>
