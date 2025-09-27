@@ -706,7 +706,7 @@ html {
 .products__description {
     margin-top: 94px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 28px;
 
     @media screen and (max-width: 1439px) {
@@ -763,6 +763,14 @@ html {
     flex-direction: column;
     z-index: 1;
     background-color: #FBFBFB;
+}
+
+.products__information__title {
+    margin-bottom: 9px;
+}
+
+.products__information__description {
+    margin-bottom: 25px;
 }
 
 .products__information__title, .products__information__description {
@@ -1244,5 +1252,17 @@ html {
 
     .find-more__btn {
         align-self: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer__gradient {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__gradient__contacts {
+        display: contents;
     }
 }
