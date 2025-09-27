@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -9,13 +10,13 @@
 <div id="preloader">
     <div class="loader"></div>
 </div>
-<header>
-    <div class="container navigation">
-        <div class="logo">
-            <img src="images/Logo.svg" alt="Logo">
-        </div>
+<header class="container">
+    <div class="navigation">
+        <svg class="logo" style="width:150px; height:35px;">
+            <use href="sprite.svg#logo"></use>
+        </svg>
         <ul class="menu">
-            <li class="menu__hover"><a class="menu__item" href="#">Home</a></li>
+            <li class="menu__hover active"><a class="menu__item" href="#">Home</a></li>
             <li class="menu__hover"><a class="menu__item" href="#">Shop</a></li>
             <li class="menu__hover"><a class="menu__item" href="#">Plant Care</a>
                 <ul class="hidden__menu">
@@ -24,9 +25,13 @@
                     <li><a class="hidden__menu__hover" href="#">Fertilizer</a></li>
                     <li>
                         <a class="hidden__menu__hover" href="#">Priming</a>
-                        <img class="hidden__menu__arrow" src="images/arrow_right_menu.svg" alt="Arrow">
-                        <img class="hidden__menu__arrow__hover" src="images/arrow_right_menu_hover.svg" alt="Arrow">
-                        <ul>
+                        <svg class="hidden__menu__arrow" style="width:7px; height:10px;">
+                            <use href="sprite.svg#arrow_right"></use>
+                        </svg>
+                        <svg class="hidden__menu__arrow__hover" style="width:7px; height:10px;">
+                            <use href="sprite.svg#arrow_left"></use>
+                        </svg>
+                        <ul class="hidden__menu__section-2">
                             <li><a href="#">Universal</a></li>
                             <li><a href="#">For Ficus</a></li>
                             <li><a href="#">For Cacti</a></li>
@@ -41,7 +46,9 @@
         </ul>
         <div class="login">
             <a href="registration.html" class="login-btn">
-                <img src="images/Logout.svg" alt="Logout" class="btn-icon">
+                <svg style="width:20px; height:20px;">
+                    <use href="sprite.svg#login_icon"></use>
+                </svg>
                 Login
             </a>
         </div>
@@ -49,7 +56,7 @@
 </header>
 <main>
     <section class="container">
-        <div class="container main-content">
+        <div class="main-content">
             <div class="main-description">
                 <a class="welcome">Welcome to GreenShop</a>
                 <h1 class="title">Let’s Make a Better
@@ -70,166 +77,280 @@
             </div>
         </div>
     </section>
-    <section class="container">
-        <div>
-            <div class="main__products">
-                <div class="categories">
-                    <div class="categories__list__container">
-                        <a class="categories__title">Categories</a>
-                        <ul class="categories__list">
-                            <li><a href="#">House Plants</a></li>
-                            <li><a href="#">Potter Plants</a></li>
-                            <li><a href="#">Seeds</a></li>
-                            <li><a href="#">Small Plants</a></li>
-                            <li><a href="#">Big Plants</a></li>
-                            <li><a href="#">Succulents</a></li>
-                            <li><a href="#">Terrariums</a></li>
-                            <li><a href="#">Gardening</a></li>
-                            <li><a href="#">Accessories</a></li>
-                        </ul>
-                    </div>
-                    <img src="images/Super_Sale_Banner.png" alt="Super Sale" class="sale-banner">
+    <section class="section-2 container">
+        <div class="main__products">
+            <div class="categories">
+                <div class="categories__list__container">
+                    <a class="categories__title">Categories</a>
+                    <ul class="categories__list">
+                        <li><a class="categories__list__active" href="#">House Plants</a></li>
+                        <li><a href="#">Potter Plants</a></li>
+                        <li><a href="#">Seeds</a></li>
+                        <li><a href="#">Small Plants</a></li>
+                        <li><a href="#">Big Plants</a></li>
+                        <li><a href="#">Succulents</a></li>
+                        <li><a href="#">Terrariums</a></li>
+                        <li><a href="#">Gardening</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <div class="products__navigation">
-                        <ul class="navigation__list">
-                            <li><a href="#">All Plants</a></li>
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-                        <div class="navigation__sort">
-                            <label for="sort">Short by:</label>
-                            <select id="sort" name="cars">
-                                <option value="default">Default sorting</option>
-                                <!--                                <option value="fhtl">Price: from high to low</option>-->
-                                <!--                                <option value="flth">Price: from low to high</option>-->
-                            </select>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <div class="product__card">
-                            <img src="images/Barberton_Daisy.png" alt="Barberton Daisy" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Barberton Daisy</a>
-                            <a class="product__price">$119.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Angel_Wing_Begonia.png" alt="Angel Wing Begonia" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Angel Wing Begonia</a>
-                            <a class="product__price">$169.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/African_Violet.png" alt="African Violet" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">African Violet</a>
-                            <a class="product__price">$199.00</a>
-                            <a class="product__price__discount">$229.00</a>
-                            <a class="product__percent__discount">13% OFF</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Beach_Spider_Lily.png" alt="Beach Spider Lily" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Beach Spider Lily</a>
-                            <a class="product__price">$129.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Blushing_Bromeliad.png" alt="Blushing Bromeliad" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Blushing Bromeliad</a>
-                            <a class="product__price">$139.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Aluminum_Plant.png" alt="Aluminum Plant" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Aluminum Plant</a>
-                            <a class="product__price">$179.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Bird's_Nest_Fern.png" alt="Bird's Nest Fern" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Bird's Nest Fern</a>
-                            <a class="product__price">$99.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Broadleaf_Lady_Palm.png" alt="Broadleaf Lady Palm" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Broadleaf Lady Palm</a>
-                            <a class="product__price">$59.00</a>
-                        </div>
-                        <div class="product__card">
-                            <img src="images/Chinese_Evergreen.png" alt="Chinese Evergreen" class="product__img">
-                            <div class="hidden__buttons">
-                                <a href="#"><img src="images/shopping.svg" alt="cart"></a>
-                                <a href="#"><img src="images/heart.svg" alt="heart"></a>
-                                <a href="#"><img src="images/magnifier.svg" alt="search"></a>
-                            </div>
-                            <a class="product__name">Chinese Evergreen</a>
-                            <a class="product__price">$39.00</a>
-                        </div>
-                    </div>
-                </div>
+                <img src="images/Super_Sale_Banner.png" alt="Super Sale" class="sale-banner">
             </div>
-            <div class="product__pages">
-                <ul class="page__list">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#"><img src="images/Arrow_Right.png" alt="Arrow_Right"></a></li>
+            <div class="products__navigation">
+                <ul class="navigation__list">
+                    <li><a class="navigation__list-active" href="#">All Plants</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
                 </ul>
+                <div class="navigation__sort">
+                    <label for="sort">Short by:</label>
+                    <select id="sort" name="cars">
+                        <option value="default">Default sorting</option>
+                        <!--                                <option value="fhtl">Price: from high to low</option>-->
+                        <!--                                <option value="flth">Price: from low to high</option>-->
+                    </select>
+                </div>
             </div>
+            <div class="products">
+                <div class="product__card">
+                    <img src="images/Barberton_Daisy.png" alt="Barberton Daisy" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Barberton Daisy</a>
+                    <a class="product__price">$119.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Angel_Wing_Begonia.png" alt="Angel Wing Begonia" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Angel Wing Begonia</a>
+                    <a class="product__price">$169.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/African_Violet.png" alt="African Violet" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">African Violet</a>
+                    <a class="product__price">$199.00</a>
+                    <a class="product__price__discount">$229.00</a>
+                    <a class="product__percent__discount">13% OFF</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Beach_Spider_Lily.png" alt="Beach Spider Lily" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Beach Spider Lily</a>
+                    <a class="product__price">$129.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Blushing_Bromeliad.png" alt="Blushing Bromeliad" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Blushing Bromeliad</a>
+                    <a class="product__price">$139.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Aluminum_Plant.png" alt="Aluminum Plant" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Aluminum Plant</a>
+                    <a class="product__price">$179.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Bird's_Nest_Fern.png" alt="Bird's Nest Fern" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Bird's Nest Fern</a>
+                    <a class="product__price">$99.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Broadleaf_Lady_Palm.png" alt="Broadleaf Lady Palm" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Broadleaf Lady Palm</a>
+                    <a class="product__price">$59.00</a>
+                </div>
+                <div class="product__card">
+                    <img src="images/Chinese_Evergreen.png" alt="Chinese Evergreen" class="product__img">
+                    <div class="hidden__buttons">
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#shopping"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width:20px; height:20px;">
+                                <use href="sprite.svg#magnifier"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="product__name">Chinese Evergreen</a>
+                    <a class="product__price">$39.00</a>
+                </div>
+            </div>
+        </div>
+        <div class="product__pages">
+            <ul class="page__list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><img src="images/Arrow_Right.png" alt="Arrow_Right"></a></li>
+            </ul>
         </div>
     </section>
-    <section class="container products__description">
-        <img src="images/infi_image_1.png" alt="Summer cactus & succulents" class="products__info__images">
-        <div class="products__description__container">
-            <div class="products__information">
-                <a class="products__information__title">Summer cactus & succulents</a>
-                <a class="products__information__description">We are an online plant shop offering a wide range of cheap
-                    and trendy plants</a>
-                <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow"></button>
+    <section class="container">
+        <div class="products__description">
+            <div class="products__description__container">
+                <div class="products__info__images">
+                    <img src="images/info_image_1.png" alt="Summer cactus & succulents">
+                </div>
+                <div class="products__information">
+                    <a class="products__information__title">Summer cactus & succulents</a>
+                    <a class="products__information__description">We are an online plant shop offering a wide range of
+                        cheap
+                        and trendy plants</a>
+                    <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow">
+                    </button>
+                </div>
             </div>
-        </div>
-        <img src="images/info_image_2.png" alt="Styling Trends & much moreSuper Sale" class="products__info__images">
-        <div class="products__description__container">
-            <div class="products__information">
-                <a class="products__information__title">Styling Trends & much more</a>
-                <a class="products__information__description">We are an online plant shop offering a wide range of cheap
-                    and trendy plants</a>
-                <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow"></button>
+            <div class="products__description__container">
+                <div class="products__info__images">
+                    <img src="images/info_image_2.png" alt="Styling Trends & much moreSuper Sale">
+                </div>
+                <div class="products__information">
+                    <a class="products__information__title">Styling Trends & much more</a>
+                    <a class="products__information__description">We are an online plant shop offering a wide range of
+                        cheap
+                        and trendy plants</a>
+                    <button class=find-more__btn>Find More <img src="images/default_arrow_right.svg" alt="arrow">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -243,10 +364,7 @@
             <div class="blog__card">
                 <img class="blog__info__img" src="images/blog_image-1.png" alt="">
                 <div class="blog__card__text">
-                    <a class="blog__card__date">
-                        September 12
-                        <a class="blog__card__date2">I Read in 6 minutes</a>
-                    </a>
+                    <a class="blog__card__date">September 12 I Read in 6 minutes</a>
                     <h6 class="blog__card__title">Cactus & Succulent Care Tips</h6>
                     <a class="blog__card__description">Cacti are succulents are easy care plants for any home or
                         patio.</a>
@@ -266,9 +384,7 @@
                 <img class="blog__info__img" src="images/blog_image_2.png" alt="">
                 <div class="blog__card__text">
                     <a class="blog__card__date">
-                        September 13
-                        <a class="blog__card__date2">I Read in 2 minutes</a>
-                    </a>
+                        September 13 I Read in 2 minutes</a>
                     <h6 class="blog__card__title">Top 10 Succulents for Your Home</h6>
                     <a class="blog__card__description">Best in hanging baskets. Prefers medium to high light.</a>
                     <a class="read__more__btn" href="#">
@@ -286,9 +402,7 @@
             <div class="blog__card">
                 <img class="blog__info__img" src="images/blog_image_3.png" alt="">
                 <div class="blog__card__text">
-                    <a class="blog__card__date">September 15
-                        <a class="blog__card__date2">I Read in 3 minutes</a>
-                    </a>
+                    <a class="blog__card__date">September 15 I Read in 3 minutes</a>
                     <h6 class="blog__card__title">Cacti & Succulent Care Tips</h6>
                     <a class="blog__card__description">Cacti and succulents thrive in containers and because most
                         are..</a>
@@ -307,9 +421,7 @@
             <div class="blog__card">
                 <img class="blog__info__img" src="images/blog_image_4.png" alt="blog_image_4">
                 <div class="blog__card__text">
-                    <a class="blog__card__date">September 15
-                        <a class="blog__card__date2">I Read in 2 minutes</a>
-                    </a>
+                    <a class="blog__card__date">September 15 I Read in 2 minutes</a>
                     <h6 class="blog__card__title">Best Houseplants Room by Room</h6>
                     <a class="blog__card__description">The benefits of houseplants are endless. In addition to..</a>
                     <a class="read__more__btn" href="#">
@@ -331,24 +443,34 @@
     <div class="footer__container">
         <div class="footer__info">
             <div class="footer__info__card">
-                <img class="footer__info__img" src="images/garden_care.png" alt="Garden Care">
-                <h6 class="footer__info__title">Garden Care</h6>
-                <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
-                    plants.</a>
+                <svg class="footer__info__svg" style="width:83px; height:96px;">
+                    <use href="sprite.svg#garden_care"></use>
+                </svg>
+                <div class="footer__info__card__flex">
+                    <h6 class="footer__info__title">Garden Care</h6>
+                    <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
+                        plants.</a>
+                </div>
             </div>
-            <img class="" src="images/footer_rectangle.svg" alt="rectangle">
             <div class="footer__info__card">
-                <img class="footer__info__img" src="images/plant_renovation.png" alt="Plant Renovation">
-                <h6 class="footer__info__title">Plant Renovation</h6>
-                <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
-                    plants.</a>
+                <svg class="footer__info__svg" style="width:83px; height:96px;">
+                    <use href="sprite.svg#plant_renovation"></use>
+                </svg>
+                <div class="footer__info__card__flex">
+                    <h6 class="footer__info__title">Plant Renovation</h6>
+                    <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
+                        plants.</a>
+                </div>
             </div>
-            <img class="" src="images/footer_rectangle.svg" alt="rectangle">
             <div class="footer__info__card">
-                <img class="footer__info__img" src="images/watering_garden.png" alt="Watering Garden">
-                <h6 class="footer__info__title">Watering Garden</h6>
-                <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
-                    plants.</a>
+                <svg class="footer__info__svg" style="width:83px; height:96px;">
+                    <use href="sprite.svg#watering_garden"></use>
+                </svg>
+                <div class="footer__info__card__flex">
+                    <h6 class="footer__info__title">Watering Garden</h6>
+                    <a class="footer__description">We are an online plant shop offering a wide range of cheap and trendy
+                        plants.</a>
+                </div>
             </div>
             <div class="footer__info__email">
                 <h6 class="footer__info__email_title">Would you like to join newsletters?</h6>
@@ -366,18 +488,29 @@
             </div>
         </div>
         <div class="footer__gradient">
-            <img class="footer__logo" src="images/Logo.svg" alt="logo">
+            <svg class="footer__logo" style="width:150px; height:35px;">
+                <use href="sprite.svg#logo"></use>
+            </svg>
             <div class="footer__gradient__container footer__location">
-                <img src="images/location.svg" alt="location">
+                <svg class="" style="width:20px; height:20px;">
+                    <use href="sprite.svg#location"></use>
+                </svg>
                 <a class="footer__gradient__description">70 West Buckingham Ave. Farmingdale, NY 11735</a>
             </div>
-            <div class="footer__gradient__container">
-                <img class="footer__contact-email__img" src="images/email.svg" alt="email">
-                <a class="footer__gradient__description" href="mailto:contact@greenshop.com">contact@greenshop.com</a>
-            </div>
-            <div class="footer__gradient__container">
-                <img class="footer__phone__img" src="images/phone.svg" alt="phone">
-                <a class="footer__gradient__description" href="tel:+88 01911 717 490">+88 01911 717 490</a>
+            <div class="footer__gradient__contacts">
+                <div class="footer__gradient__container">
+                    <svg class="" style="width:20px; height:20px;">
+                        <use href="sprite.svg#email"></use>
+                    </svg>
+                    <a class="footer__gradient__description"
+                       href="mailto:contact@greenshop.com">contact@greenshop.com</a>
+                </div>
+                <div class="footer__gradient__container">
+                    <svg class="" style="width:20px; height:20px;">
+                        <use href="sprite.svg#phone"></use>
+                    </svg>
+                    <a class="footer__gradient__description" href="tel:+88 01911 717 490">+88 01911 717 490</a>
+                </div>
             </div>
         </div>
         <div class="footer__navigation">
@@ -412,16 +545,20 @@
                 </ul>
             </div>
             <div class="footer__navigation__social">
-                <a class="footer__navigation__title">Social Media</a>
-                <ul class="footer__social__list">
-                    <li><img src="images/Facebook.svg" alt="Facebook"></li>
-                    <li><img src="images/Instagram.png" alt="Instagram"></li>
-                    <li><img src="images/Twitter.png" alt="Twitter"></li>
-                    <li><img src="images/Linkidin.png" alt="Linkidin"></li>
-                    <li><img src="images/Youtube.png" alt="Youtube"></li>
-                </ul>
-                <a class="footer__navigation__title footer__payment__title">We accept</a>
-                <img class="payment_methode" src="images/payment_methode.png" alt="payment method">
+                <div class="navigation_flex-1">
+                    <a class="footer__navigation__title">Social Media</a>
+                    <ul class="footer__social__list">
+                        <li><img src="images/Facebook.svg" alt="Facebook"></li>
+                        <li><img src="images/Instagram.png" alt="Instagram"></li>
+                        <li><img src="images/Twitter.png" alt="Twitter"></li>
+                        <li><img src="images/Linkidin.png" alt="Linkidin"></li>
+                        <li><img src="images/Youtube.png" alt="Youtube"></li>
+                    </ul>
+                </div>
+                <div class="navigation_flex-2">
+                    <a class="footer__navigation__title">We accept</a>
+                    <img class="payment_methode" src="images/payment_methode.png" alt="payment method">
+                </div>
             </div>
         </div>
     </div>
